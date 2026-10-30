@@ -40,6 +40,8 @@ For a horizon of `n` steps, the encoding includes:
 - [PDDL4J 4.0.0](https://github.com/pellierd/pddl4j)
 - [SAT4J Core 3.0.0](https://gitlab.ow2.org/sat4j/sat4j)
 
+The JAR files are not versioned: download `pddl4j-4.0.0.jar` and the SAT4J core JAR, and place them in a `lib/` folder at the root of the repository.
+
 ## Build
 
 ```bash
@@ -82,4 +84,9 @@ Outputs 8 PNG figures and a `results.pdf` combining all of them.
 
 ### Results
 
-See `results.pdf` for the full comparison figures.
+| Runtime | Makespan |
+|---|---|
+| ![Blocks runtime](results_blocks_runtime.png) | ![Blocks makespan](results_blocks_makespan.png) |
+| ![Logistics runtime](results_logistics_runtime.png) | ![Logistics makespan](results_logistics_makespan.png) |
+
+See [`results.pdf`](results.pdf) for all the figures (blocks, gripper, depot, logistics).
